@@ -1,13 +1,17 @@
-//al click su icona hamburger appendo classe visible con proprietà display block
-$(".fas.fa-bars").click(function() {
+//per mostrare:
+//affido evento click a selettore strutturale
+$(".header-right > a").click(function() {
 
-  $(".hamburger-menu").addClass("visible");
+  //appendo classe active con propr. display block
+  $(".hamburger-menu").addClass("active");
 
 });
 
-//al click su icona close rimuovo classe visible
-$(".fas.fa-times").click(function() {
+//per chiudere:
+//affido evento click a selettore strutturale
+$(".close").click(function() {
 
-  $(".hamburger-menu").removeClass("visible");
+  //rimuovo classe active
+  $(".hamburger-menu").removeClass("active");
 
 });
